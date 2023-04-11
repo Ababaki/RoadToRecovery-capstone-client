@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import CentersMap from "./components/map/CenterMap";
+import "./App.scss";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
+import Upload from './pages/Upload/Upload';
+
+import Header from "./components/Header/header";
+import ErrorPage from "./pages/Error/ErrorPage";
+import Calendar from './components/SobrietyCalendar/SobrietyCalendar'
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return(
+  <>
+  <BrowserRouter>
+  <Header/>
+    <Routes>
+    <Route path='/' element={<CentersMap />}/>
+   
+     <Route path='/centermap' element={<CentersMap />} />
+     
+     <Route path='/testimonial/upload' element={<Upload />} />
+    
+     <Route path='*' element={<ErrorPage />} />
+     <Route path='/calendar' element = {<Calendar/>}/>
+     
+    </Routes>
+</BrowserRouter>
+  
+  
+  </>
+  ) 
 }
 
 export default App;

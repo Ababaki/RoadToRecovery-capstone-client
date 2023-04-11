@@ -1,0 +1,155 @@
+@use "../../styles/partials/mixins" as *;
+
+/* Base styles */
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.button-container{
+  display: flex;
+  justify-content: center;
+}
+
+
+.reset-button {
+  background-color: lightblue;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 6rem;
+  cursor: pointer;
+  margin-bottom: 20px;
+  
+  
+
+  margin-top: 1rem;
+
+
+}
+
+button.reset-button:hover {
+  background-color: lightblue;
+}
+
+.supportive-message {
+  background-color: lightblue;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: larger;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.supportive-message:hover {
+  background-color: lightblue;
+}
+
+
+.rbc-event, .rbc-selected{
+  // background-color: rgb(16, 170, 221);
+  height: 2rem;
+  justify-content: center;
+  display: flex;
+  font-size: large;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  height: 100%;
+
+}
+/* Calendar styles */
+.rbc-calendar {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.rbc-toolbar-label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.rbc-header {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+  text-align: center;
+  background-color: #f1f1f1;
+  padding: 10px 0;
+}
+
+.rbc-row-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.rbc-date-cell {
+  flex: 1 1 calc(100% / 7);
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.rbc-date-cell:hover {
+  background-color: rgb(81, 187, 222);
+}
+
+.rbc-today {
+  background-color: #ddd;
+}
+
+.selectable {
+  background-color: lightblue;
+ 
+}
+
+
+
+.unselectable {
+  background-color: #eee;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+/* SobrietyLog styles */
+.sobriety-log-container {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.sobriety-log-header {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+.rbc-row-content {
+flex-direction: column;
+}
+
+.rbc-date-cell {
+width: 100%;
+
+}

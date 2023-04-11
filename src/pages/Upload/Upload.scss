@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+.title-sobriety{
+  font-family:sans-serif;
+  color: lightblue;
+}
+.upload-testimonial-page {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+  max-width: 1280px;
+
+  &__title {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+  .upload-cont {
+  &__input-title,
+  &__input-des {
+    margin-bottom: 20px;
+
+    &.invalid {
+      input {
+        border-color: red;
+      }
+    }
+
+    .upload-cont__label {
+      margin-bottom: 5px;
+      font-size: 16px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 2px solid #ccc;
+      transition: border-color 0.3s ease-in-out;
+
+      &:focus {
+        outline: none;
+        border-color: #67c3ff;
+      }
+    }
+  }
+
+  &__input-title {
+    input {
+      height: 50px;
+    }
+  }
+
+  &__input-des {
+    input {
+      height: 150px;
+    }
+  }
+
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+
+  .btns-cancel {
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #ccc;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #666;
+    }
+  }
+
+  button {
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #67c3ff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #52a6d8;
+    }
+  }
+}
+
+.success-cont {
+  background-color: #7ed957;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+
+  .upload-cont {
+    background-color: #f2f2f2;
+    padding: 2rem;
+   
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width:95%;
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    &__input-title {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      &  p {
+        font-size: 1.2rem;
+        color: #333;
+        margin-bottom: 0.5rem;
+      }
+
+      & input {
+        font-size: 1rem;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 0.5rem;
+        outline: none;
+        width: 100%;
+      }
+    }
+
+    &__input-des {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      width: 100%;
+
+      & p {
+        font-size: 1.2rem;
+        color: #333;
+        margin-bottom: 0.5rem;
+      }
+
+      &  input {
+        font-size: 1rem;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 0.5rem;
+        outline: none;
+        height: 8rem;
+      }
+    }
+
+    .btns {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+
+      &-cancel {
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        background-color: #ccc;
+        color: #fff;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #999;
+        }
+      }
+
+      button {
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        background-color: lightblue;
+        color: #fff;
+        border: none;
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: darkblue;
+        }
+      }
+    }
+  }
+
+  .success-cont {
+    background-color:lightblue;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem auto;
+    text-align: center;
+    max-width: 600px;
+
+    &__message {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #333;
+    }
+  }
+}

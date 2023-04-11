@@ -1,0 +1,56 @@
+@use "../../styles/partials/mixins" as *;
+.log-btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.used-btn{
+    
+        background-color: lightblue;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 22px;
+        font-weight: bold;
+        border-radius: 5px;
+        width: 6rem;
+        cursor: pointer;
+        margin-bottom: 20px;
+        height: 3rem;
+        
+        
+      
+        margin-top: 1rem;
+      
+      
+      
+
+}
+
+.did-not-use-btn{
+    background-color: lightblue;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 12rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display:inline;
+    height: 3rem;
+    
+    
+  
+    margin-top: 1rem;
+  
+  
+  }
+.date{
+    display: flex;
+    justify-content: center;
+    color: lightblue;
+    font-size: larger;
+    font-weight: bold;
+}
